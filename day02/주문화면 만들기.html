@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .warp{
+            width: 500px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 auto;
+
+        }
+
+        .img{
+            width: 350px;
+            height: 350px;
+            /*background-color: blue;*/
+            background-image: url(https://i.namu.wiki/i/G5O3byNvdPtkZy_b931tjMOTqBOSl_T1evCJyk-jaGJ_AMZnu0Tw98PFvYyF6b_TJVmmcRwxR5OMdmZ9WmRW1g.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        .info{
+            border: 1px solid black;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .order-warp{
+            border: 1px solid black;
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .order-warp input {
+            width:100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .order-warp select{
+            width:100%;
+            padding:10px;
+
+        }
+        
+        .order-warp button{
+            width:100%;
+            padding:10px;
+            border-radius: 5px;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+<div class="warp">
+    <div class="product-info">
+        <div class="img">
+
+        </div>
+        <div class="info">
+            <h1>웹소설 원작 대박 흥행작</h1>
+            <p>10년 이상 연재된 소설이 완결된 날 소설 속 세계가 현실이 되어 버리고, 유일한 독자였던 ‘김독자’가 소설의 주인공 ‘유중혁’ 그리고 동료들과 함께 멸망한 세계에서 살아남기 위한 이야기</p>
+            <p>가격 : <span>20,000원</span></p>
+         </div>
+
+   </div>
+
+   <div class="order-warp">
+        <div>주문내역</div>
+        <div>주문자 이름 <input type="text"></div>
+        <div> 주문 매수
+            <select>
+                <option value="">매수 선택하세요</option>
+                <option value="">1매</option>
+                <option value="">2매</option>
+                <option value="">3매</option>
+            </select>
+        </div>
+        <div>주문금액<input type="text"></div>
+        <div>전화번호<input type="text"></div>
+        <div><button>주문하기</button></div>
+   </div>
+    
+</div>
+    
+</body>
+</html>
