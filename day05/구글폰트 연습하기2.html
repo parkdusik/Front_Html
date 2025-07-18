@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Manufacturing+Consent&display=swap" rel="stylesheet">
+
+<style>
+
+    /* *는 전체 선택자. 모든 요소에 직접 스타일을 적용하는 명령어*/
+    *{
+        font-family: "Manufacturing Consent", system-ui;
+    }
+
+   .font_bitcount{
+        font-family: 'bitcount', system-ui;
+
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+     }
+
+    .font_bitcount_child{
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+    .body_wrap2{
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+
+
+ </style>
+
+</head>
+<body>
+    <h2>폰트 연습</h2>
+    <p>폰트는 상속된다.</p>
+    전체선택자를 사용해 바디에 직접 작성한 폰트
+    hallo
+    <div class="font_bitcount">
+        클래스를 선택하여 작성된 폰트<br>
+        hallo
+        <div class="font_bitcount_child">
+            선택한 클래스의 자식 폰트<br>
+            hallo
+
+        </div>
+    </div>
+
+    <div class="body_wrap2">
+        바디의 디브에 작성된 폰트<br>
+        hallo
+
+
+    </div>
+
+    
+</body>
+</html>
