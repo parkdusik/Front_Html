@@ -1,0 +1,133 @@
+ /*전역 설정*/
+ ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+ }
+ 
+ 
+ 
+ 
+ /*홈_페이지 전체*/
+ .Home_Total_wrap{
+    border: 1px solid black;
+    width: 1400px;
+    height: 8000px;
+ }
+
+ /*헤더 영역*/
+ .header_wrap{
+    border: 1px solid black;
+    width: 1200px;
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    display: flex;
+ }
+
+    /*헤더_로고*/
+    .header_logo_wrap{
+        border: 1px solid black;
+        width: 200px;
+    }
+
+        .header_logo_wrap img{
+            width: 200px;
+            transform: scale(1.4);
+        }
+
+    /*헤더_검색창*/
+    .header_search_wrap{
+        border: 1px solid black;
+        width: 600px;
+        position: relative;
+    }
+
+        .header_search_wrap input{
+            border: 3px solid #007aff;
+            border-radius: 30px;
+            width: 520px;
+            height: 40px;
+            position: absolute;
+
+            top: 30px;
+            left: 30px;
+        }
+
+        .header_search_wrap a{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 38px;
+            left: 520px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .header_search_wrap img{
+            width: 25px;
+            height: 25px;
+            display: block;
+        }
+
+    /*헤더_광고*/
+    .header_ad_warp{
+        border: 1px solid black;
+        width: 200px;
+        position: relative;
+    }
+
+    .header_ad_warp a{
+        position: absolute;
+        top: 20px;
+    }
+
+
+    /*헤더_개인정보*/
+    .header_Personal_wrap{
+        border: 1px solid black;
+        width: 200px;
+    
+    }
+
+    .header_Personal_wrap ul{
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between
+    }
+
+    .header_Personal_wrap li{
+        margin-top: 30px;
+        border: 1px solid black;
+        width: 33.3%;
+        text-align: center;
+    }
+/*메인 영역*/
+.main_wrap{
+    border: 1px solid black;
+    width: 1200px;
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    /*메인_네비게이션 영역*/
+    .nav_wrap{
+        border: 1px solid black;
+        width: 1200px;
+        height: 100px;
+    }
+
+        .category_all{
+            width: 250px;
+            height: 70px;
+            border: 1px solid black;
+            background-color: #10af29;
+        }
+
+        .category_font{
+            color: white;
+        }
