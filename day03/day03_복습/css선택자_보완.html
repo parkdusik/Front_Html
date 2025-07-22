@@ -15,11 +15,13 @@
             color: blue;
         }
         /*자손 선택자 활용*/
+        /*.wrap태그 안에있는 모든 선택개체*/
         .wrap a{
             text-decoration: none;
             color: #ccc;
         }
         /*자식 선택자는 .wrap기준으로 바로 아래에 있는 태그만 사용*/
+        /*예를 들면 wrap의 자식인 a만 선택, a안에 a태그가 또 있다면 선택되지 않음*/
         .wrap > a{
             text-decoration: none;
             color: #ccc;
