@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_10</h2>
+    <p> 숫자 두 개의 합
+        사용자가 입력한 두 숫자를 더한 결과를 출력하세요.
+    </p>
+
+    <script>
+        //변수 선언
+        let num1, num2, sum; //입력 받을 숫자 2개와 숫자를 저장할 출력용 변수 선언
+        //입력
+        num1 = parseInt(prompt("숫자를입력해 주세요",)); //숫자1을 프롬프트로 받아 정수형으로 변환
+        num2 = parseInt(prompt("숫자를입력해 주세요",)); //숫자2를 프롬프트로 받아 정수형으로 변환
+        //처리
+        sum = num1+num2; //숫자 1, 숫자 2를 더해 sum에 저장
+        //출력
+        alert("두 숫자의 합은 "+sum+ "입니다."); //sum(숫자1, 숫자2의 합)을 경고문구로 출력.
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_2</h2>
+    <p>짝수, 홀수 판별 사용자가 입력한 숫자가 짝수인지 홀수인지 판별하는 프로그램을 작성하세요.</p>
+
+    <script>
+        let num;//숫자를 입력받을 변수 num 선언
+        num = parseInt(prompt("숫자를 입력해주세요",)) //num은 프롬프트를 통해 정수자료형 숫자를 저장할 것이다 선언
+        
+        if(num%2 == 0){//만약에 입력받은 숫자(num)를 2로 나눠서 나머지가 0이면
+            alert("짝수입니다.") //짝수입니다. 출력
+        }else{//그외에는
+            alert("홀수입니다.")//홀수입니다. 출력
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //비교연산자 =>참과 거짓을 반환
+        // == 같니?
+        // === 자료형까지 같니?
+        //  !=, !==, >, >=, <=, <
+
+        let su1=10;
+        let su2=11;
+
+        console.log("su1(10)이 su2(11)보다 크니?","su1>su2",su1>su2)
+        console.log("su1(10)이 su2(11)랑 같니?","su1==su2",su1==su2)
+        console.log("su1(10)이 su2(11)랑 자료형도 같니?","su1==su2",su1==su2)
+        console.log("su1(10)이 su2(11)보다 작니?","su1<su2",su1<su2)
+        console.log("su1(10)이 su2(11)보다 작거나 같니?","u1<=su2",su1<=su2)
+        console.log("su1(10)이 su2(11)보다 크거나 같니?","su1>=su2",su1>=su2)
+        console.log(su1 != su2)
+        console.log(su1 !== su2)
+
+        // ==, ===엄역한 비교.
+
+        let a=10;
+        let b= "10";
+
+        console.log(a==b); //true, 자동형변환해서 비교
+        console.log(a===b); //false, type까지 같아야 참으로 나옴
+
+        console.log(a!==b); //false
+        console.log(a!==b); //true
+
+    </script>
+</body>
+</html>

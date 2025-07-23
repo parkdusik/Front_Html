@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_8</h2>
+    <p>사용자가 입력한 점수에 따라 다음 등급을 출력하세요:
+        90점 이상: "A"
+        80점 이상: "B"
+        70점 이상: "C"
+        60점 이상: "D"
+        60점 미만: "F"
+    </p>
+    <script>
+        //변수 선언
+        let Score;//점수 변수 선언
+        //입력 및 오류 처리
+        while(true){ // True일 경우 while문의 명령을 반복한다.
+            Score = parseInt(prompt("0~100까지의 숫자를 입력해주세요",""));// 0~100까지의 숫자를 프롬프트로 받아 정수 타입으로 변환.
+            if (!isNaN(Score) && Score >= 0 && Score <= 100 ){break;
+                //만약 공백이 아니거나, 0이상 100이하문자면 false가 되어 while문을 종료.
+        } else {
+            alert("0~100까지의 정수가 아닙니다. 다시 기입해 주세요.")
+            //그렇지 않다면(미기입하거나 0미만, 100초과라면) 재기입 경고문구 출력
+        }
+        }
+        //점수 처리 및 출력
+        if(Score>=90){ //점수가 90이상이라면
+            alert("당신의 학점은 A입니다.") //A학점 경고문구 출력
+        } else if(Score>=80){ //점수가 80점 이상이라면
+            alert("당신의 학점은 B입니다.") //B학점 경고문구 출력
+        } else if(Score>=70){ //점수가 70점 이상이라면
+            alert("당신의 학점은 C입니다.") //C학점 경고문구 출력
+        } else if(Score>=60){ //점수가 60점 이상이라면
+            alert("당신의 학점은 D입니다.") //D학점 경고문구 출력
+        } else if(Score<60){ //점수가 60점 미만이라면
+            alert("당신의 학점은 F입니다.") //E학점 경고문구 출력
+        } 
+
+    </script>
+    
+</body>
+</html>

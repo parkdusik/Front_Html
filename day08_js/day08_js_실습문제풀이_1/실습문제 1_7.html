@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_7</h2>
+    <p>3 배수, 5의 배수  3과5의 배수 출력하기
+        1부터 100까지 숫자를 순회하며 다음 조건에 맞게 출력하세요:
+
+        3의 배수: "3의배수"
+        5의 배수: "5의 배수"
+        3과 5의 공배수: "3과 5의 배수"
+        나머지 숫자: 해당 숫자
+    </p> 
+
+    <script>
+        //for문을이용한 3, 5, 3&&5의 배수 처리
+        for(i=1; i<=100; i++){ //i를 1로 초기화 i를 1부터 100까지 계속 증가. i=1~100
+            if(i%3 == 0){ //만약에 i를 3으로 나눈 나머지가 0이면 
+                document.writeln("3의배수");
+            } else if(i%5==0){ //만약에 i를 5로 나눈 나머지가 0이면
+                document.writeln("5의 배수");
+            }  else if(i%3==0 && i%5==0){ //만약에 i를 3로 나눈 나머지가 0이면서(&&) i를 5로 나눈 나머지가 0이면
+                document.writeln("3과 5의 배수"); 
+            }   else if(i%3!==0 && i%5!==0){ //만약에 i를 3로 나눈 나머지가 0이면서(&&) i를 5로 나눈 나머지가 0이 아니라면.
+                document.writeln(i);
+            }
+        }
+    </script>
+    
+</body>
+</html>
