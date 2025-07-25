@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        *****
+        *****
+        *****
+
+        */
+
+        //별한개를 사용해서 위와같이 출력하기
+
+        //한줄만들기
+        /*
+        for(let i=1; i<=5; i++){
+            document.write("*");
+        }
+            */
+
+
+        //한줄만들기 3번 반복하기
+        document.write("=====><br>");
+        for( let k=1; k<=3; k++){   //행, 줄  
+        for( let i=1; i<=5; i++){
+            document.write("*");
+        }
+            document.write("<br>");
+        }
+
+
+        /*
+        k=1
+            i=1~5
+        k=2
+            i=1~5
+        k=3
+            i=1~5
+
+        k=4 //반복조건에 위배 반복 종료
+
+        */
+
+        /*
+
+        *
+        **
+        ***
+        ****
+        *****
+        
+        */
+
+        document.write("=====><br>");
+        for( let k=1; k<=5; k++){   //행, 줄  
+            for( let i=1; i<=k; i++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        /*
+        k=1
+            i=1~1
+        k=2
+            i=1~2
+        k=3
+            i=1~3
+        k=4
+            i=1~4
+        k=5
+            i=1~5        
+        
+        */
+    </script>
+</body>
+</html>
