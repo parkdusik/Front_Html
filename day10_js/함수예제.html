@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //입력 없음
+        function funcA(){
+            alert("hi funtion !!");
+
+        }
+
+        //함수호출
+        funcA();
+
+        //입력 : 0
+        //반환 : x
+
+        function funcB(cnt){
+            for (let i=1; i<=cnt; i++){
+                alert("hi ^^")
+            }
+        }
+        
+        //funcB(2);
+        //funcB(3);
+
+        //입력 : 0 : 두수
+        //반환 : 0 : 두수를 더한 겨과
+        //기능 : 매개변수로 전달된 두 수를 더하는 기능
+
+        function adder(su1, su2) {
+            let sum = su1+su2;
+            return sum;
+        }
+
+        let result = adder(2,3)
+        //alert(result)
+        alert(adder(10,20));
+
+        //위치정보를 반환하는 함수
+        //입력 : 0
+        //출력 : 위치정보 (위도, 경도)
+
+        function 위치가져오기(){
+            let 위도 = 352.4222;
+            let 경도 = 125523.4222;
+
+            //배열, 객체 사용
+
+            let 위치 = {위도:위도, 경도:152232.422};
+            return 위치;
+
+        }
+
+        let result위치 = 위치가져오기();
+        console.log(result위치)
+
+
+
+
+        //객체 맛보기
+
+        let snackName="맛동산";
+        let snack={
+            name:"맛동산",
+            price:2800,
+            weight:"100g",
+            maker:"해태"
+        };
+
+        console.log(snack.name);
+        console.log(snack.price);
+        console.log(snack.maker);
+
+    //로또번호 제공하기
+
+    //입력: x
+    //반환: 로또번호 6개
+    function 로또번호추첨기(){
+        let a=10,b=32,c=12,d=38,e=17,f=6;
+
+        //let lottos = [10,32,12,38,17,6]
+        let lotts = new Array(6);
+        lotts[0]=a;
+        lotts[1]=b;
+        lotts[2]=c;
+        lotts[3]=d;
+        lotts[4]=e;
+        lotts[5]=f;
+        return
+    }
+
+    let resultArr
+
+    console.log(resultArr);
+
+    </script>
+</body>
+</html>

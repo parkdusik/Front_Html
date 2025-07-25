@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="클릭이벤트()"></button>
+    <script>
+        function 클릭이벤트(){
+            let click_event = prompt("내용을 입력해주세요",)
+        }
+        
+        let Land;
+        Land =[
+            ["□","□","□","□","□"],
+             ["□","□","□","□","□"],
+              ["□","□","□","□","□"],
+               ["□","□","□","□","□"],
+                ["□","□","□","□","□"],
+        ]
+
+        //버튼 클릭시
+        function Option(){
+            let Option = prompt("정말로 게임을 끝내시겠습니까? 1.취소, 2. 재시작")
+            
+            switch(Option){
+                case 1: break;
+                case 2:
+                    // 클로버를 섞는 펑션 호출
+            }
+
+        }
+
+        function Random_clover(){
+            //5x5배열 중 랜덤한 곳에 클로버가 저장.
+            //클로버가 저장된 곳은 true
+            //나머지 배열은 false
+            //math.random 으로 뽑은 두 숫자를 램덤한 land에 삽입. 이건 컴퓨테에만 가지고 있고. 외부로 표시하지 않음.
+            //플레이어가 클로버에 해당되는 배열을 입력했을 때 표시.
+        }
+
+
+        function Land(){
+            let clover = "■";
+            let Land_1 = true;
+
+            if(Land_1=true){
+                Land_1=false;
+                alert("꽝입니다. 다시 뽑아주세요")
+            } else {
+                alert("클로버를 찾았습니다!")
+                //이후 클로버로 변환"♧"
+            }
+        }
+
+
+    </script>
+</body>
+</html>

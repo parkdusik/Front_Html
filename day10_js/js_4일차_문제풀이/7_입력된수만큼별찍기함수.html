@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 7.  입력된 수만큼 별찍기  (  수   -> 수만큼 별찍기  )
+        let Input_num = parseInt(prompt("별갯수를 입력해주세요",))
+
+        function 별찍기(num){
+            let star= "*"
+            let star_stamp="";
+
+           for(let i=0; i<num; i++){
+            star_stamp +=star;
+           }
+            
+            return star_stamp;
+        }
+        
+        document.write(별찍기(Input_num));
+    </script>
+</body>
+</html>

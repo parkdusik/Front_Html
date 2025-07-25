@@ -14,16 +14,18 @@
 
     <script>
         //변수선언
-        let num, odd;
+        let num;
+        let odd ="";
         //입력
         num = parseInt(prompt("정수를 입력해주세요. 해당 숫자까지의 홀수를 출력해드립니다.", ));
         //처리
-        for(i=0; i<=num; i+1){
-            if(i%2 ===1){
-                document.write()
+        for(let i=1; i<=num; i++){
+            if(i%2 == 1){
+                odd+=i
             }
         }
         //출력
+        document.write(odd);
 
     </script>
 

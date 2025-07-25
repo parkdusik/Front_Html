@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3.  구구단을 출력하는 함수 만들기  ( 단  -> 해당 단을 출력하기  )
+        let row = parseInt(prompt("출력할 구구단의 단을 입력해주세요",))
+
+        function 구구단함수(num) {//매개변수 num선언. row값은 num으로 펑션에 삽입
+            let result = ""; //결과값을 문자열로 받는 결과 저장값 선언.
+            for(let i=1; i<10; i++){ //구구단 함수 i를 1~9까지 증가
+                result += num*i; // 결과를 num * i를 1개씩 result에 저장. result가 숫자라면 합산. 문자열로 저장되기에 쌓임.
+            }
+            return result;
+        }
+
+        alert(구구단함수(row));
+    </script>
+</body>
+</html>

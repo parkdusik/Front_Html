@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2.  성인판단하는 함수 만들기  (  나이  -> 20세 이상이면 true, false 반환 )
+        let input_age = parseInt(prompt("나이를 입력해주세요",));
+
+        function 성인판단(age){
+            let adult;
+            if(age>=20){
+                adult=true;
+                
+            } else {
+                adult=false;
+            }
+
+            return adult;
+        }
+
+        alert("입력한 나이는 성인일까요?"+성인판단(input_age));
+        
+    </script>
+</body>
+</html>
