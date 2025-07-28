@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //함수 : 코드덩어리에 이름을 붙여 놓은것
+        //함수 호출을 통해서 코드가 실행
+        //기능 :
+        //입력 :(매개변수)
+        //반환 : 
+        function 평균구하기(a) {
+            //
+            let sum = 0;
+            for (let i = 0; i < a.length; i++) {
+                sum = sum + a[i];
+            }
+            let avg = sum / a.length;
+            return avg;
+        }
+
+        //
+        let score = [90, 80, 70, 60];
+        let result = (score);
+        console.log(result);
+
+
+        //기능 : 로도정보를 반환하는 함수
+        //입력 : x
+        //반환 : 특정회차 반환(1차원 배열을 반환)
+
+        //기능 : 로도정보를 반환하는 함수
+        //입력 : x
+        //반환 : 7월달 로또정보 반환(2차원 배열을 반환)
+
+        //기능 : 로도정보를 반환하는 함수
+        //입력 : x
+        //반환 : 2025년 로또정보 반환(3차원 배열을 반환하는 함수)
+
+        function func1() {
+            return 5;
+        }
+
+        //함수의 반환은 반드시 한개여야 한다.
+        function func2() {
+            let a = 10, b = 8;
+            return a, b; //이런 콬드는 작성하면 안됨. // 반환이 여러개 일 수 없다.
+        }
+
+        {
+            let result = func1();
+            console.log(result);
+        }
+
+        {
+            let result = func2();
+            console.log(result);
+        }
+
+        function func3(){
+            let a=10, b=3;
+            let arr=[a,b];
+            return arr;
+        }
+
+        {
+            let result = func3();
+            console.log(result);
+        }
+
+        //문제1)배열 (1차원, 2차원, 3차원 배열)을 반환하는 함수 만들기
+        //문제2) 매개변수로 입력 받아서 1차원, 2차원, 3차원별의 내용을 반환하는 함수 만들기.
+    </script>
+</body>
+
+</html>

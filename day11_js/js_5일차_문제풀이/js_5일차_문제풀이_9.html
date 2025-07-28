@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>자바스크립트_5일차_문제풀이_9</h2>
+    <p> prices 배열에서 1200보다 큰 숫자만 골라 새로운 배열에 저장하세요.
+        const prices = [1000, 1500, 900, 1800, 2000, 1200];
+    </p>
+
+    <script>
+        const prices = [1000, 1500, 900, 1800, 2000, 1200];
+
+        //최대값을 저장할 배열 생성
+        Bigger_price=[];
+        //배열 번호 증가 반복연산
+        for(let i=0; i<prices.length; i++){
+                let Num = prices[i]; //Num= price[i]에 저장된 값을를 저장
+                if(Num>1200){//만약 Num이 1200보다 클경우 조건.
+                    Bigger_price.push(Num)//Bigger_price배열에 저장.
+                } 
+        }
+
+        console.log(Bigger_price);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_5일차_문제풀이_6</h2>
+        <p> 아래 numbers 배열에서  가장 큰 수 를 출력하시오
+        const numbers = [12, 41, 6, 18, 10];
+        </p>
+    
+    <script>
+        const numbers = [12, 41, 6, 18, 10];
+
+
+        let Max_number = numbers[0];
+        //반복문을 사용한 최대값 구하기
+        for(let i=0; i<numbers.length; i++){
+            if(Max_number<numbers[i]){
+                Max_number=numbers[i];
+            }
+        }
+
+        console.log(Max_number);
+        //반복문을 사용하지 않은 최대값 구하기
+
+        if(Max_number < numbers[0]){
+            Max_number = numbers[0];
+        }
+
+        if(Max_number < numbers[1]){
+            Max_number = numbers[1];
+        }
+
+        if(Max_number < numbers[2]){
+            Max_number = numbers[2];
+        }
+
+        if(Max_number < numbers[3]){
+            Max_number = numbers[3];
+        }
+
+        if(Max_number < numbers[4]){
+            Max_number = numbers[4];
+        }
+
+        console.log(Max_number)
+
+    </script>
+</body>
+</html>

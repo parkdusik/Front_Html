@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>자바스크립트_5일차_문제풀이_6</h2>
+    <p> 아래 numbers 배열에서 숫자 7이 있는지 확인하고, 있으면 true , 아니면 false를 출력하세요.
+        const numbers = [2, 4, 6, 8, 10];
+    </p>
+
+    <script>
+        const numbers = [2, 4, 6, 8, 10];
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === 7) {
+                console.log("number" + "[" + [i] + "]" + "True");
+            } else {
+                console.log("number" + "[" + [i] + "]" + "False");
+            }
+
+        }
+
+        /*
+           const  numbers = [2, 4, 6, 8, 10];
+    let result=false;  //결과를 저장할 변수
+    for( let i=0; i< numbers.length; i++){
+        console.log( numbers[i]);
+        if(numbers[i] ===7 ){
+            result=true;
+            break;
+        }
+    }
+    console.log( result);
+    */
+
+    </script>
+</body>
+
+</html>

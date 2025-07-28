@@ -198,7 +198,7 @@
             ["xylophone", "yacht", "zebra", "apple", "banana", "cat","dog"]
         ];
 
-        console.log(month2[1][1])
+        console.log(month2[1][1]);
 
 
         //console.log(  month1[0][0]);     기준으로 부터 행정보, 열정보가 필요함  ( 변수 하나에 접근가능 )
@@ -244,11 +244,11 @@
 
         function 모든단어출력(words){//매개변수 words 지정
             for(let i = 0; i<words.length; i++){
-                //i는 0이고 word의 최대길이보다 작다면 1씩증가. 인터프리터원칙에따라 요건미충족시 다음코드로 이동.
+                //i는 0이고 word의 최대길이보다 작다면 1씩증가. 요건미충족시 다음코드로 이동.
                 for(let j = 0; j<words[i].length; j++){
-                    //j는 0이고 word[i]의 최대길이보다 작다면 1씩증가. 인터프리터원칙에따라 요건미충족시 다음코드로 이동.
+                    //j는 0이고 word[i]의 최대길이보다 작다면 1씩증가. 요건미충족시 다음코드로 이동.
                      for(let k = 0; k<words[i][j].length; k++){
-                        //k는 0이고 word[i][k]의 최대길이보다 작다면 1씩증가. 인터프리터원칙에따라 요건미충족시 다음코드로 이동.
+                        //k는 0이고 word[i][k]의 최대길이보다 작다면 1씩증가. 요건미충족시 다음코드로 이동.
                         console.log(words[i][j][k]); //k에 대한 요건이 충족되는 동안 반복 출력.
                      }
                 }

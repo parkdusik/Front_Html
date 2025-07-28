@@ -6,56 +6,51 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="클릭이벤트()"></button>
     <script>
-        function 클릭이벤트(){
-            let click_event = prompt("내용을 입력해주세요",)
+        let Memo = [
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ],
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ],
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ]
+                    ];
+
+        function 메모입력(){
+            let Input = prompt("입력할 메모의 위치를 0/0/0 형태로 입력 및 / 메모를 입력해주세요. 예시[1/2/3/안녕하세요]")
+            let Input_Array = Input.split("/");
+            let Num1 = Number(Input_Array[0]); 
+            let Num2 = Number(Input_Array[1]);
+            let Num3 = Number(Input_Array[2]);
+            let Memo_Remem = Input_Array[3];
+
+            Memo[Num1][Num2][Num3] = Memo_Remem;
+
         }
         
-        let Land;
-        Land =[
-            ["□","□","□","□","□"],
-             ["□","□","□","□","□"],
-              ["□","□","□","□","□"],
-               ["□","□","□","□","□"],
-                ["□","□","□","□","□"],
-        ]
-
-        //버튼 클릭시
-        function Option(){
-            let Option = prompt("정말로 게임을 끝내시겠습니까? 1.취소, 2. 재시작")
-            
-            switch(Option){
-                case 1: break;
-                case 2:
-                    // 클로버를 섞는 펑션 호출
-            }
-
-        }
-
-        function Random_clover(){
-            //5x5배열 중 랜덤한 곳에 클로버가 저장.
-            //클로버가 저장된 곳은 true
-            //나머지 배열은 false
-            //math.random 으로 뽑은 두 숫자를 램덤한 land에 삽입. 이건 컴퓨테에만 가지고 있고. 외부로 표시하지 않음.
-            //플레이어가 클로버에 해당되는 배열을 입력했을 때 표시.
-        }
-
-
-        function Land(){
-            let clover = "■";
-            let Land_1 = true;
-
-            if(Land_1=true){
-                Land_1=false;
-                alert("꽝입니다. 다시 뽑아주세요")
-            } else {
-                alert("클로버를 찾았습니다!")
-                //이후 클로버로 변환"♧"
-            }
+        function 출력(){
+            let Input = prompt("출력할 메모의 위치를 0/0/0 형태로 입력해주세요. 예시[1/2/3]")
+            let Input_Array = Input.split("/");
+            let Num1 = Number(Input_Array[0]);
+            let Num2 = Number(Input_Array[1]);
+            let Num3 = Number(Input_Array[2]);
+            alert(Memo[Num1][Num2][Num3]);
         }
 
 
     </script>
+    <button onclick="메모입력()">메모 입력</button>
+    <button onclick="출력()">메모 불러오기</button>
+
+
 </body>
 </html>

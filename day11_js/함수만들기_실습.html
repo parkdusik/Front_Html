@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        //문제1)배열 (1차원, 2차원, 3차원 배열)을 반환하는 함수 만들기
+
+        function 숫자() {
+
+            let 짝수1 = [];
+            let 홀수1 = [];
+            let 짝수2 = [];
+            let 홀수2 = [];
+
+
+
+            for (let i = 1; i < 50; i++) {
+                let 백 = i;
+                if (백 % 2 == 0) {
+                    짝수1.push(i);
+                } else {
+                    홀수1.push(i);
+                }
+
+
+            }
+
+            for (let i = 51; i < 100; i++) {
+                let 백 = i;
+                if (백 % 2 == 0) {
+                    짝수2.push(i);
+                } else {
+                    홀수2.push(i);
+                }
+
+
+            }
+
+            // 1차원 배열 = 분류
+            // 2차원 배열 = 짝수1, 짝수2, 홍수1, 홀수2  
+            let 분류 = [짝수1, 홀수1, 짝수2, 홀수2];
+
+            return 분류;
+        }
+
+        console.log(숫자());
+
+        //문제2) 매개변수로 입력 받아서 1차원, 2차원, 3차원별의 내용을 반환하는 함수 만들기
+
+        let Input_Num = parseInt(prompt());
+
+
+
+
+
+        /*
+            //food[ [] , [] , []]
+
+            let food = ["햄버거", "치킨", "짜장"];
+            let food2 = [{ name: "햄버거", kind: "햄버거" }, "치킨", "짜장"];
+
+            let result = [[], [], []];
+
+            function 음식목록() {
+
+                let food = ["햄버거", "치킨", "짜장"];
+                return food;
+
+            }
+
+
+
+
+            //문제2) 매개변수로 입력 받아서 1차원, 2차원, 3차원별의 내용을 반환하는 함수 만들기.
+
+
+            function 음식목록2(column) {
+
+                let food = ["햄버거", "치킨", "짜장"];
+                return food[column];
+
+            }
+
+
+
+        */
+
+    </script>
+</body>
+
+</html>
