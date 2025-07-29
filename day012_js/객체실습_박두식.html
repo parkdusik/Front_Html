@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        데이터 
+        영화 제목 : 아바타 불과 재
+        감독 : 제임스 카메론
+        제작사 : 20세기 스튜디오
+        개봉일 : 2025년 12월
+        제작비 :2억 5000만 달라
+        */
+
+        const Avatar={
+            Movie_Name :["아바타","아바타 물의 길", "아바타 불과 재"],
+            Director : "제임스 카메론",
+            Production :"20세기 스튜디오",
+            Delease_date : ["2009년 12월","2022년 12월","2025년 12월"],
+            production_cost : ["2억 3700만 달러", "3억 5000만 달러", "2억 5000만 달러"],
+
+
+            printInfo : function(){
+                alert(`${this.Movie_Name[2]}는
+            ${this.Director}이 만든 영화이며
+            ${this.Production}에서 제작
+            ${this.Delease_date[2]} 에 개봉예정이다.
+            한편 제작비는 ${this.production_cost[2]}인 걸로 알려져있다.
+                `);
+            }
+
+        };
+
+        Avatar.printInfo();
+
+        let Delease_dates = Avatar.Delease_date
+
+        function interval (a){
+            for(let i=0; i<a.length; i++){
+                let inter = a[i]
+
+
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

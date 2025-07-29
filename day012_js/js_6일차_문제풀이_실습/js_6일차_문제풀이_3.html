@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>자바스크립트_6일차_문제풀이_3</h2>
+    <p> kors 배열에서 총점과 평균을 출력하시오 const kors = [90 80, 70, 99, 100];
+    </p>
+    <p>
+        reduce활용해보기
+    </p>
+
+    <script>
+        /*
+        const kors = [90, 80, 70, 99, 100];
+        let Total_scores=0;
+        
+        for(let i=0; i<kors.length; i++){
+            Total_scores += kors[i];
+        }
+        
+        let Average = Total_scores/kors.length;
+
+        console.log(Total_scores);
+        console.log(Average);
+        */
+
+        const kors = [90, 80, 70, 99, 100];
+
+        function 총점평균(num) {
+            let Total = num.reduce((acc, item) => { return acc + item }, 0);
+            let Average = Total / num.length;
+
+            //let To_Av = [Total, Average];
+
+            let To_Av={Total , Average};
+
+            return To_Av;
+        }
+
+        let result = 총점평균(kors);
+        console.log(`총점${result.Total} 평균${result.Average}`);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

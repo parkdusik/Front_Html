@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //함수 선언식 :function 함수이름(){}
+        //함수 선언식으로 작성한 함수는 호이스팅 됨
+        //함수 호출보다 아래에 있어서 정상적으로 작동함
+        //호이스팅이 => 함수선언식으로 만든 함수는 먼저 해석함.
+
+        //1~10까지 합
+
+        function hap10() {
+            let sum = 0;
+            for (let i = 1; i <= 10; i++) {
+                sum = sum + 1;
+            }
+            alert(sum);
+            //리턴이 없으면 외부에 저장 불가.
+        }
+
+        function hap10Ver2() {
+            let sum = 0;
+            for (let i = 1; i <= 10; i++) {
+                sum = sum + 1;
+            }
+            alert(sum);
+            return sum;//리턴이 있으면 외부 변수에 저장가능.
+        }
+
+        hap10();
+        let result = hap10Ver2();
+
+    </script>
+</body>
+
+</html>

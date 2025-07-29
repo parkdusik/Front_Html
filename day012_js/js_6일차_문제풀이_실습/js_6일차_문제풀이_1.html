@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>자바스크립트_6일차_문제풀이_1</h2>
+    <p> 아래 fruits 배열을 거꾸로 순서대로 한 새로운 배열을 만드시오
+        let fruits = ["자두", "복숭아", "포도"];
+    </p>
+    <p>map활용해보기
+    </p>
+
+    <script>
+        /*
+        const numbers = [1, 2, 3, 4, 5];
+
+        Double = [];
+
+        for (let i = 0; i < numbers.length; i++) {
+            let Number_Array = numbers[i];
+            Double.push(Number_Array * 2);
+        }
+
+        console.log(Double)
+        */
+
+
+        //map을 사용하지 않은 예시
+        function Map(callback) {
+            let NewNumbers = [];
+            const numbers = [1, 2, 3, 4, 5];
+            for (let i = 0; i < numbers.length; i++) {
+                let temp = numbers[i];
+                let newTemp = callback(temp);
+                NewNumbers.push(newTemp);
+            }
+            return NewNumbers;
+        }
+
+        let result = Map((number) => {
+            return number * 2;
+
+        });
+
+        console.log(`맵을 사용하지 않은 예시 ${result}`);
+
+        //map을 사용한 예시
+        const numbers = [1, 2, 3, 4, 5];
+
+        let NewNumbers = numbers.map(function (item) {
+            return item * 2;
+        })
+
+        console.log(`맵을 사용한 예시 ${NewNumbers}`);
+
+    </script>
+</body>
+
+</html>
