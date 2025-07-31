@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item {
+            display: flex;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        function getContent(obj){ //매개변수
+            console.log("asdsad");
+            const item = obj.closest(".item");//closest 자신기준 가장 가까운 요소 탐색
+            console.log(item);
+            const content = item.querySelector(".aa");
+            alert(content.value);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>특정요소를 기준으로 가까운태그 찾기</h2>
+    <div class="item">
+        <div><input type="text" class="aa"></div>
+        <div><button onclick="getContent(this)">클릭</button></div><!--태그의this 자기 자신 태그정보-->
+    </div>
+    <div class="item">
+        <div><input type="text" class="aa"></div>
+        <div><button onclick="getContent(this)">클릭</button></div>
+    </div>
+
+</body>
+
+</html>
