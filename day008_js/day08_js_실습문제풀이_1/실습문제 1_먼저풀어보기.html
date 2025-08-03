@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_먼저 풀어보기</h2>
+    <p>1. 사과의 무게를 입력받아 200이상이면 고급 아니면 일반으로 분류하기 (출력하시오)
+        2. 입력한 수가  3의 배수인지 확인하기
+    </p>
+    <script>
+        //사과 무게 변수
+        let AppleWeight;
+        //사과 무게를 텍스트에서 정수 자료형으로 변환하여 취급. 프로롬프트에서 사과무게를 받음.
+        AppleWeight =parseInt(prompt("사과의 무게를 입력해주세요(g)",));
+        if(AppleWeight >=200){//만약에 사과무게가 200이상이면
+            alert("고급"); //고급 경고 문구 출력
+        } else { //그렇지 않다면
+            alert("일반"); //일반 경고문구 출력
+        }
+        
+        if(AppleWeight%3 == 0){ //만약에 사과무게를 3으로 나눈나머지가 0이라면
+            document.write("3의 배수입니다.")//3의 배수입니다를 html웹페이지에 출력.
+        } else {
+            document.write("3의 배수가 아닙니다.")//3의 배수가 아닙니다를 html웹페이지에 출력.
+        }
+
+    </script>
+</body>
+</html>

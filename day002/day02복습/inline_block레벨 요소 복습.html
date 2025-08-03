@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .blocklevel {
+      border: 1px solid red;       /* 라인 박스를 눈에 보이게 */
+      line-height: 50px;           /* 라인 박스의 높이 */
+      font-size: 20px;
+    }
+    .inline-level {
+      background-color: yellow;    /* 인라인 박스의 영역을 보이게 */
+      border: 1px solid blue;
+      padding: 5px;
+    }
+    </style>
+    
+</head>
+<body>
+    <h2>인라인 레벨 요소</h2>
+    <p>인라인 레벨 요소는 라인박스에 예속되는 요소다.
+        블록레벨 요소에는 가상의 라인박스가 존재하고. 라인박스의 높이는 line-heigh으로 조절할 수 있다.
+        인라인 레벨 요소는 라인박스 안에 표시되며 인라인레벨 요소의 크기는 라인박스의 크기를 넘어갈 수 없다.
+        만약 인라인 요소의 크기가 커지면 라인박스 또한 커진다.
+        이러한 특성으로 인라인 요소는 width와 high등을 따로 지정할 수 없다. 다만 margin-left, right. padding-left, rignt는 가능하다.
+         인라인 요소의 콘텐츠는 라인 박스의 높이를 기준으로 수직 중앙(기본적으로 baseline)에 맞춰진다.
+    </p>
+    <p>
+        인라인 레벨 요소를 같는 태그의 종류
+        span, img ,a, strong등.
+    </p>
+    
+    <h2>블록레벨 요소</h2>
+    <p>인라인요소가 가상의 라인 박스위에 배치지되는 것과 달리. 라인박스와 무관하게. 한줄 전체를 차지하는 요소다.
+        그렇기에 블록레벨요소는 높이와 넓이 마진과 패딩등 영역 설정이 자유롭다.
+        라인박스에 비종속적이기에 라인박스 내의 요소를 정렬시키는 text-alin 같은 css에 영향을 받지 않는다.
+    </p>
+    <p>블록레벨 요소를 같는 태그의 종류
+        h1~6, p, h3, h1, ul, li, div등
+    </p>
+
+    <h2>인라인-블록 레벨 요소</h2>
+    <p>display css를 통해 태그의 요소를 변경할 수 있다. 이때 요소의 속성을 inline-block으로 지정할 수 있다</p>
+    <p>inline-block은 인라인 레벨요소의 특징인 라인 박스 안에 위치하며 요소간 같은 라인박스 안에 배치가 가능하다는 장점을 취한다.
+        블록 레벨 요소 처럼 높이와 크기, 마진과 패딩 설정이 자유롭다. 설정시 라인박스는 요소의 크기에 맞춰 높아진다.
+    </p>
+
+    <h2>박스와 인라인 박스 예제</h2>
+    <p class="blocklevel">
+        테두리는 블록레벨인 p요소의 영역
+        <span class="inline-level">인라인 레벨영역. (인라인레벨의 높이=라인박스의 높이)</span>
+        여기도 블록레벨 영역
+    </p>
+</body>
+</html>

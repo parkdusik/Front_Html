@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            width: 400px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        .tab-menu{
+            display: flex;
+        }
+
+        .tab-menu >div{
+            border: 1px solid black;
+            width: 50%;
+        }
+
+        .Member{
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        .noMember{
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        .Member , .noMember{
+            display: none;
+        }
+    </style>
+
+    <script>
+        //회원메뉴클릭시
+        //회원영역보이기, 비회원영역 안보이기
+        function showMember(){
+            const Member=document.querySelector(".Member");
+            const noMember=document.querySelector(".noMember");
+
+            console.log(Member);
+            console.log(noMember);
+
+            Member.style.display="block";
+            noMember.style.display="none";
+
+        }
+
+        function showNoMember(){
+            const noMember=document.querySelector(".noMember");
+            const Member=document.querySelector(".Member");
+
+            console.log(Member);
+            console.log(noMember);
+
+            noMember.style.display="block";
+            Member.style.display="none";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--탭메뉴-->
+        <div class="tab-menu">
+            <div onclick="showMember()">회원</div>
+            <div onclick="showNoMember()">비회원</div>
+        </div>
+
+        <!--화원로그인-->
+        <div class="Member" style="display: block;">
+            회원화면
+        </div>
+        <!--비회원로그인-->
+        <div class="noMember">
+            비회원 화면 ********
+        </div>
+    </div>
+</body>
+
+</html>

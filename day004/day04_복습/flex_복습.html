@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex_comtainer{
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            display : flex;
+        }
+
+        .flex_item{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display : flex;
+        }
+
+        .flex_comtainer_2{
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            display : flex;
+            flex-direction :column;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>flex요소</h2>
+    <p>display css로 레벨 변경이 가능하다. flex요소가 될경우 inline, block, inline 레벨을 벗어난 별도의 레이아웃이 된다.</p>
+    <p>flex선언시 부모는 flex 컨테이너. 자식요소는 flex item으로 동작한다. 이후 모든 개체는 flex 레이아웃 규칙을 따른다.</p>
+    <h3>Flex 컨테이너 관련 속성</h3>
+    <p>flex-direction : 자식 요소(flex item)의 정렬 방향.</p>
+    <p>flex-wrap :아이템을 한 줄에 다 넣을지 줄바꿈할지 결정.</p>
+    <p>flex-flow : flex-direction + flex-wrap을 한 번에 설정.</p>
+    <p>justify-content : 주축(가로 or 세로) 방향 정렬.</p>
+    <p>align-items : 교차축(세로 or 가로) 방향 정렬.</p>
+    <p>align-content : 여러 줄(flex-wrap 사용 시) 간격 정렬.</p>
+    <h3>Flex 아이템 관련 속성</h3>
+    <p>order : 요소의 순서 변경.
+    <p>flex-grow : 남는 공간을 얼마나 차지할지 (비율).</p>
+    <p>flex-shrink : 공간 부족 시 얼마나 줄어들지 (비율).</p>
+    <p>flex-basis : 요소의 기본 크기.</p>
+    <p>flex : flex-grow, flex-shrink, flex-basis를 한번에 설정.</p>
+    <p>align-self : 해당 아이템만 개별적으로 교차축 정렬.</p>
+
+
+    <div class="flex_comtainer">
+        플렉스컨테이너
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+    </div>
+
+       <div class="flex_comtainer_2">
+        <h3>flex-direction는 플렉스의 방향설정이 가능하다</h3>
+        플렉스컨테이너
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+        </div>
+
+        <div class="flex_item">
+            플렉스 아이템
+    </div>
+
+</body>
+</html>

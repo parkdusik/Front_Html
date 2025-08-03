@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //양치질하기 횟수를 정하고 싶다면 
+
+        function  양치질하기아침(){
+        document.write("치약을 짠다<br>");
+        document.write("양치질은 안한다<br>");
+        document.write("헹구기<br>");
+        }
+
+          function  양치질하기점심(){
+        document.write("치약을 짠다55<br>");
+        document.write("양치질은 한다5<br>");
+        document.write("헹구기<br>");
+        }
+
+          function  양치질하기저녁(){
+        document.write("치약을 짠다<br>");
+        document.write("양치질은 한다<br>");
+        document.write("헹구기10<br>");
+        }
+
+        양치질하기아침()
+        양치질하기점심()
+        양치질하기저녁()
+
+        //함수
+        //입력(매개변수):함수와 외부와의 매개자역할
+        //반환 : 함수가 내부에서 만든 결과를주는 것
+
+        function 양치질하기ver2(cnt){//cnt=>매개변수
+            document.write("치약을 짠다 " +cnt +"<br>");
+            document.write("양치질은 한다" +cnt +"<br>");
+            document.write("헹구기 "+cnt +"<br>");
+        }
+
+        양치질하기ver2(132)
+        양치질하기ver2(125)
+        양치질하기ver2(234)
+
+    </script>
+</body>
+</html>

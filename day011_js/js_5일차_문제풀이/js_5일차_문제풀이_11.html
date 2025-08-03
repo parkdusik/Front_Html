@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_5일차_문제풀이_11</h2>
+    <p>아래  fruits 배열에  자두 포함 여부 true, false 출력하시오 
+        let fruits = ["자두", "복숭아", "포도"];
+    </p>
+    
+    <script>
+        let fruits = ["자두", "복숭아", "포도"];
+
+        //let result=false; 없다.
+        for(let i=0; i<fruits.length; i++){
+            if(fruits[i] === "자두"){
+                console.log("True")
+            } else{
+                console.log("false")
+            }
+            /*
+            let item=fruits[i];
+            if(tiem === "자두"){
+                result=true;
+                break;
+            }
+            */
+        }
+
+        //console.log(result);
+
+    </script>
+</body>
+</html>

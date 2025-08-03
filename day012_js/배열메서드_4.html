@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //원본배열의 내용을 변형된 새로운 배열에 반환힘
+        //map(콜백함수)
+        let numbers=[];
+
+        numbers.map(function(item){
+            return item*2;
+        });
+        console.log(result);
+
+        //같은동작을 생략해서 표현1
+        let result2=numbers.map((item)=>{
+            return item*2;
+        });
+        console.log(result2);
+        //같은동작을 생략해서 표현2
+        let result3=numbers.map(item=>item*2);
+        console.log(result3);
+
+
+
+        //아래는 map을 사용힌것과 동일한 동작
+        let newNumbers=[];
+        for(let i=0; i<numbers.length; i++){
+            let temp=numbers[i]*2;
+            newNumbers.push(temp);
+        }
+    </script>
+</body>
+
+</html>

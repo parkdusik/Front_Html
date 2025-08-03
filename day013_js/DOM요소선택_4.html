@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function change() {
+            const items = document.querySelectorAll(".item");
+
+            // forEach로 모든 .item 요소의 배경색 변경
+            items.forEach(function(item){
+                item.style.backgroundColor = "blue";
+            });
+        }
+
+        function unChange() {
+            const items = document.querySelectorAll(".item");
+            items.forEach(function(item){
+                item.style.backgroundColor = "";
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>querySelectorALL로 요소 선택하기</h2>
+    <p>주의사항 : 모두 선택하기이기에 선택 대상이 한개여도 배열로 반환됨</p>
+
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+
+    <button onclick="change()">스타일 적용</button>
+    <button onclick="unChange()">스타일 취소</button>
+</body>
+</html>

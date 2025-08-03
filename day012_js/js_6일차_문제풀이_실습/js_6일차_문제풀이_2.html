@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>자바스크립트_6일차_문제풀이_2</h2>
+    <p>아래  fruits 배열을  거꾸로 순서대로 한 새로운 배열을 만드시오  
+    let fruits = ["자두", "복숭아", "포도"];
+    </p>
+    <p>forEach 사용해보기.
+    </p>
+
+    <script>
+        /*
+        let fruits = ["자두", "복숭아", "포도"];
+
+        let Reverse_fruits=[];
+
+        for(let i = fruits.length-1; i>=0; i--){
+            Reverse_fruits.push(fruits[i]);
+        }
+
+        console.log(Reverse_fruits);
+        */
+
+
+        let fruits = ["자두", "복숭아", "포도"];
+        let Rfruits=[];
+
+        fruits.forEach((item)=>{
+            Rfruits.unshift(item);
+        });
+
+         console.log(Rfruits);
+
+    </script>
+</body>
+
+</html>

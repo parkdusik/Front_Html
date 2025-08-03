@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //변수 선언
+        //날짜 변수
+       let Today = new Date();
+       let Year = Today.getFullYear();
+       let Month = Today.getMonth() +1;
+       let Day = Today.getDate();
+        
+       let Memo_input;
+        let Memo_Remember = [];
+
+        //출력
+        alert("오늘은 "+Year+"년"+Month+"월 "+Day+"일 입니다.");
+        document.write("<h2>메모 리스트</h2>");
+        document.write("<p>총 10개까지 등록 가능합니다. 해당되는 번호를 눌러주세요.</p>");
+        
+        for(let i=1; i<11; i++){
+            document.write(i+"번 메모장 <br>")
+        }
+        
+        let Memo_list =prompt("입력하실 메모의 번호를 입력해주세요")
+
+        //입력
+        switch(Memo_list){
+            case 1 :
+                Memo_input=prompt("메모를 등록해주세요",);
+                Memo_Remember[0]=Memo_input;
+                break;
+            
+        }
+
+
+
+        //처리
+
+
+        //출력
+        alert(Memo_Remember[0])
+        
+ 
+
+    </script>
+    
+</body>
+</html>

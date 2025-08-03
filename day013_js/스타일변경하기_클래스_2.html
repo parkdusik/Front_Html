@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .a{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+       }
+    </style>
+
+    <script>
+        function styleToggle(){
+            //alert("작동댐");
+
+            const wrap = document.querySelector(".wrap");
+            console.log(wrap);
+            wrap.classList.toggle("a"); //a클래스 토글 // 1번은 add 1번은 remove = 토글 
+        }
+    </script>
+</head>
+
+<body>
+    <!--이벤트핸들러 : 이벤트 발생시 실행될 함수
+        이벤트리스너 : 이벤트 감지-->
+    <div class="wrap"></div>
+    <button onclick="styleToggle()">스타일 적용 토글</button> <!--이벤트핸들러//리스너-->
+</body>
+
+</html>

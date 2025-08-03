@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Memo = [
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ],
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ],
+                        [
+                            ["", "", ""],
+                            ["", "", ""],
+                            ["", "", ""]
+                        ]
+                    ];
+
+        function 메모입력(){
+            let Input = prompt("입력할 메모의 위치를 0/0/0 형태로 입력 및 / 메모를 입력해주세요. 예시[1/2/3/안녕하세요]")
+            let Input_Array = Input.split("/");
+            let Num1 = Number(Input_Array[0]); 
+            let Num2 = Number(Input_Array[1]);
+            let Num3 = Number(Input_Array[2]);
+            let Memo_Remem = Input_Array[3];
+
+            Memo[Num1][Num2][Num3] = Memo_Remem;
+
+        }
+        
+        function 출력(){
+            let Input = prompt("출력할 메모의 위치를 0/0/0 형태로 입력해주세요. 예시[1/2/3]")
+            let Input_Array = Input.split("/");
+            let Num1 = Number(Input_Array[0]);
+            let Num2 = Number(Input_Array[1]);
+            let Num3 = Number(Input_Array[2]);
+            alert(Memo[Num1][Num2][Num3]);
+        }
+
+
+    </script>
+    <button onclick="메모입력()">메모 입력</button>
+    <button onclick="출력()">메모 불러오기</button>
+
+
+</body>
+</html>

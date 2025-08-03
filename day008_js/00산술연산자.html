@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //연산자는 연산 결과가 반드시 발생
+        
+        /*
+        산술 연산자 : ,*,/,%,+,-;
+        */
+
+        //더하기
+        let a=10;
+        let b=20;
+
+        let result = a+b;
+        
+        console.log("더하기 연산", result);
+
+        //빼기
+        let x=15;
+        let y=5;
+        let result2 = x-y;
+        console.log("빼기 연산 ", result2);
+
+        //곱하기
+        let su=4;
+        let su2=3;
+        let result3= su*su2;
+        
+        console.log("곱하기 연산 ", result3);
+
+        //나누기
+        let number=21;
+        let divisor=4;
+        let result4=number/divisor;
+
+        console.log("나누기 연산 ", result4);
+
+        //몪만 갖고 싶다면
+        let result5 = Math.floor(result4);
+        console.log("나머지 몪만 ",result5);
+
+        //나머지연산
+        let num=10;
+        let divisor2=3;
+        let 나머지 = num %divisor2; // 10나누기 3(정수연산)=>나머지를 구함
+
+        console.log("나머지연산", 나머지)
+
+        //짝수판별 나머지
+        //어떤 수든 2로 나눈 나머지는 0,1
+
+        let num2=10;
+        let num2나머지 = num2%2; //0이거나1
+            console.log("나머지는",num2나머지,"입니다.")
+        if (num2나머지==0){
+            console.log("짝수");
+        }else{
+            console.log("홀수");
+        }
+
+        //거듭제곱
+        let base=2;
+        let 지수=3;
+        let 거듭제곱결과;
+        거듭제곱결과 = base ** 지수;
+
+        console.log ("거듭제곱 결과", 거듭제곱결과)
+
+    </script>
+</html>

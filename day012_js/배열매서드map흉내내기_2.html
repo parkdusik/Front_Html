@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr =["김현희", "전희연", "박두식"];
+
+        let newArr=arr.map(function(item){
+            return item+"님";
+        });
+
+        console.log(arr);
+        console.log(newArr);
+
+        //흉내내기
+        function myMap(callback){
+            let arr =["김현희", "전희연", "박두식"];
+
+            let newArr=[]; //let newArrnew array();
+            for(let i=0; i<arr.length; i++){
+                let temp=arr[i];
+                let newTemp = callback(temp);
+                newArr.push(newTemp);
+            }
+
+            return newArr;
+        }
+
+        let result = myMap(function(name){
+            return name+"님 ^^"
+        });
+
+        console.log(result);
+    </script>
+</body>
+
+</html>

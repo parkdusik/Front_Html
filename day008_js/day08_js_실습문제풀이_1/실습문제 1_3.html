@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자바스크립트_둘째날_실습문제1_3</h2>
+    <p>이름 , 국어, 영어, 수학 3과목이 입력될 때   총점과  평균을 출력하기 
+</p>
+
+    <script>
+        //변수 선언
+        let Name; // 학생이름 변수 선언
+        let Krscore, Enscore, MathScore; //국어, 영어, 수학 점수 변수 선언
+        let TotalScore; // 종합점수 변수 선언
+        let average; //평균점수 변수 선언
+        let Student_exam_score; //학생 시험 결과 출력 변수 선언 
+        //입력
+        Name = prompt("이름을 입력하세요", ); //이름을 입력 받는 프롬프트
+        Krscore = parseInt(prompt("국어 성적을 입력하세요", )); //국어 점수를 입력 받는 프롬프트
+        Enscore = parseInt(prompt("영어 성적을 입력하세요", )); //영어 점수를 입력 받는 프롬프트
+        MathScore = parseInt(prompt("수학 성적을 입력하세요", )); //수학 점수를 입력 받는 프롬프트
+        //처리
+        total = Krscore+Enscore+MathScore; //종합 점수를 계산 (국어점수 + 영어점수 + 수학점수)
+        average = (total/3); //평균 점수를 계산 (종합점수를 3으로 나눈 값 = 평균)
+        //출력
+        Student_exam_score = alert(Name+" 학생의 평균점수는 "+ average + "점입니다. 종합점수는 "+ total + "점입니다.");
+        //학생의 시험점수 = 경고문구 (학생 이름과 평균 점수, 종합점수)를 텍스트와 함께 출력.
+
+        
+
+    </script>
+    
+</body>
+</html>

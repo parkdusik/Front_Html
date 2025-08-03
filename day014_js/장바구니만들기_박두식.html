@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cart_wrap {
+            width: 900px;
+            border: 1px solid black;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+
+        table{
+            width: 900px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td,th{
+            border: 1px solid black;
+            width: 200px;
+            padding: 5px;
+        }
+
+        table caption{
+            font-weight: bold;
+            font-size: 20xp;
+            padding: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="cart_wrap">
+        <table>
+            <caption>장바구니</caption>
+            <thead>
+                <th>선택</th>
+                <th>제품명</th>
+                <th>상품설명</th>
+                <th>단가</th>
+                <th>수량</th>
+                <th>금액</th>
+            </thead>
+            <tbody id="product-list">
+                <tr>
+                    <td><input type="checkbox" class="checkbox"></td>
+                    <td class="product_name"></td>
+                    <td class="product_info"></td>
+                    <td class="cost"></td>
+                    <td class="quantity"></td>
+                    <td class="amount"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+
+</html>

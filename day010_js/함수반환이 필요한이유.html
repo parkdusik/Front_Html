@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수가 값을 반환해야하는 이유
+        //계산 결과나 처리 결과를 함수 바깥에서 사용하기 위해
+
+        //두배 만들기 출력하기
+
+        //1. 함수 x
+        //명령
+        /*
+        let money=2000;
+        let result =money*2;
+        alert(result);
+        */
+
+        //2. 함수
+        function doubleMony(){
+            let money=1000;
+            let result = money*2;
+            alert(result);
+        }
+
+        //doubleMony()
+
+        /*
+        이름:doubleMoney2
+        기능:매개변수로 전달된 금액을 2배를 출력하는 함수
+        입력(매개변수):금액
+        반환:X
+        */
+
+        function doubleMony2(money){
+            //let money=1000;
+            let result = money*2;
+            alert(result);
+        }
+
+        //doubleMony2(3000);
+
+        //두배 만들기 두배결과 반환하기
+         
+        function doubleMony3(money){
+            //let money=1000;
+            let result = money*2;
+            //alert(result);
+            return result;
+        }
+
+        let resultMoney = doubleMony3(3000);
+        alert(resultMoney);
+
+
+        function a(money){
+            let result=money*2
+            return result;
+        }
+
+        let result1 =a(100);
+        alert(result1);
+
+        //
+        let result2 = a(result1)
+        alert(result2);
+
+    </script>
+</body>
+</html>

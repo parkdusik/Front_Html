@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = "hello";
+        console.log(str);
+
+        //charAt() : 문자열내에서 특정 위치의 문자 1개를 반환하는 기능
+        let result = str.charAt(0);
+        console.log(result);
+
+        //includes():문자열 내에서 특정단어가 포함되어 있는지 여부 반환
+        let str2 = "i like javascript";
+        let result2 = str2.includes("like");
+        console.log(result2);
+
+        // 시작인덱스, 가져올 개 수 
+        // 문자열의 일부를 가져올 때 사용
+        let result3 = str2.substring(7, 11);
+        console.log(result3);
+
+
+        let str3 = "2025-07-28";
+        let result4 = str3.split("-");  //구분자로 나눠서 배열로 반환함  
+        console.log(result4);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+    <h2>자바스크립트_둘째날_실습문제1_</h2>
+    <p>사칙연산 계산기  (if, switch문)
+        사용자가 입력한 두 숫자와 연산자(+, -, *, /)를 사용하여 결과를 출력하세요.
+    </p>
+
+    <script>
+        // 함수 정의
+        function calculator() {//계산기 영역
+            // 변수선언
+            let num1, num2, Arith_Sym, result;
+            let Pluse, Minus, Multiply, Divide;
+
+            // 입력
+            num1 = parseInt(prompt("숫자를입력해 주세요",)); //숫자1을 프롬프트로 받아 정수형으로 변환
+            num2 = parseInt(prompt("숫자를입력해 주세요",)); //숫자2를 프롬프트로 받아 정수형으로 변환
+            Arith_Sym = prompt("사용할 연산자(+,-,*,/) 중 하나를 입력해주세요",); //연산자를 프롬프트로 입력받아 변수 Arith_Sym에 저장
+
+            // 처리
+            switch (Arith_Sym) { //Arith_Sym에 입력된 변수가 case와 일치할시 실행
+                case "+": //+의 경우
+                    result = num1 + num2; // num1과 num2를 더함
+                    break;                 //이후 스위치 문 탈출
+                case "-":
+                    result = num1 - num2; // num1과 num2를 뺌
+                    break;                  //이후 스위치 문 탈출
+                case "*":
+                    result = num1 * num2; // num1과 num2를 곱함
+                    break;                  //이후 스위치 문 탈출
+                case "/":
+                    result = num1 / num2; // num1과 num2를 나눔
+                    break;                     //이후 스위치 문 탈출
+                default:
+                    alert("올바른 연산자(+, -, *, /)를 입력하세요.");
+                    return; // 잘못된 연산자면 함수 종료
+            }
+
+            calculator();// 함수 실행
+
+            // 출력
+            alert(num1 + Arith_Sym + num2 + " 는 " + result + " 입니다."); 
+        }
+
+    </script>
+</body>
+</body>
+</html>

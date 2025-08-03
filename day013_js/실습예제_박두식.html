@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 400px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        .Member_tab {
+            display: flex;
+            text-align: center;
+        }
+
+        .Member_tab>div {
+            border: 1px solid black;
+            width: 50%;
+        }
+
+        .login_show {
+            height: 40px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .login_show_tab {
+            height: 25px;
+            display: flex;
+        }
+
+        .login_show input {
+            margin-left: 5px;
+            width: 130px;
+        }
+
+        .login_show button {
+            margin-left: 5px;
+            width: 60px;
+        }
+
+        .chat_wrap {
+            margin: 5px;
+            width: 380px;
+        }
+
+        #Member {
+            margin-top: 6px;
+        }
+
+        #unMember {
+            margin-top: 6px;
+        }
+
+        #login {
+            margin-left: 6px;
+            margin-top: 6px;
+        }
+
+        #cheat_text {
+            width: 300px;
+        }
+    </style>
+
+    <script>
+        //회원 비회원 탭 출력
+        //회원탭 출력
+        function showMember() {
+            const Member = document.querySelector("#Member");
+            const unMember = document.querySelector("#unMember");
+            const login = document.querySelector("#login");
+
+            Member.style.display = "block";
+            unMember.style.display = "none";
+            login.style.display = "none";
+        }
+        //비회원탭 출력
+        function unshowMember() {
+            const Member = document.querySelector("#Member");
+            const unMember = document.querySelector("#unMember");
+            const login = document.querySelector("#login");
+
+            Member.style.display = "none";
+            unMember.style.display = "block";
+            login.style.display = "none";
+        }
+        //회원 로그인 유효성 검사
+        function Member_Login() {
+            const form = document.Member_Login_form;
+            const userId = form.userId;
+            const userPw = form.userPw;
+
+            if (userId.value === "") {
+                alert("ID를 입력하세요")
+                userId.focus();
+            } else if (userPw.value === "") {
+                alert("PW를 입력하세요");
+                userPw.focus();
+            } else {
+                alert("로그인 성공");
+                login(userId.value);
+            }
+        }
+
+        //비회원 로그인 유효성 검사
+        function unMember_Login() {
+            const form = document.unMember_Login_form;
+            const userId = form.userId;
+            const userPw = form.userPw;
+
+            if (userId.value === "") {
+                alert("ID를 입력하세요")
+                userId.focus();
+            } else if (userPw.value === "") {
+                alert("PW를 입력하세요");
+                userPw.focus();
+            } else {
+                alert("로그인 성공");
+                login(userId.value);
+            }
+        }
+        //로그인 후 출력 창
+        function login(userId) {
+            const Member = document.querySelector("#Member");
+            const unMember = document.querySelector("#unMember");
+            const login = document.querySelector("#login");
+
+            Member.style.display = "none";
+            unMember.style.display = "none";
+            login.style.display = "block";
+
+            login.textContent = "아이디: " + userId;
+        }
+
+        function add_cheat() {
+            const cheat_Input = document.getElementById("cheat_text");
+            const userId = document.Member_Login_form.userId.value;
+            const div = document.createElement("div");
+            div.textContent=userId+" : "+cheat_Input.value;
+            div.style.border="1px solid #CCC";
+            div.style.marginTop="3px";
+            div.style.width="100%";
+            const chat_wrap=document.querySelector(".chat_wrap");
+            chat_wrap.appendChild(div);
+        
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <!---전체 영역-->
+    <div class="wrap">
+        <!--회원비회원 탭-->
+        <div class="Member_tab">
+            <div onclick="showMember()">회원 로그인</div>
+            <div onclick="unshowMember()">비회원 로그인</div>
+        </div>
+        <!--회원 비회원 로그인-->
+        <div class="login_show" style="display: block;">
+            <div id="Member">
+                <form name="Member_Login_form" action="" method="get" class="login_show_tab">
+                    <input type="text" name="userId" placeholder="아이디 입력">
+                    <input type="password" name="userPw" placeholder="비밀번호 입력">
+                    <button type="button" onclick="Member_Login()">로그인</button>
+                </form>
+            </div>
+            <div id="unMember" style="display: none;">
+                <form name="unMember_Login_form" action="" method="get" class="login_show_tab">
+                    <input type="text" name="userId" placeholder="임시 아이디 입력">
+                    <input type="password" name="userPw" placeholder="임시 비밀번호 입력">
+                    <button type="button" onclick="unMember_Login()">로그인</button>
+                </form>
+            </div>
+
+            <div id="login" style="display: none;">로그인 화면 </div>
+        </div>
+        <div class="chat_wrap">
+            <div class="chat_tab">
+                <input type="text" id="cheat_text">
+                <button onclick="add_cheat()" id="chat_button">댓글등록</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
