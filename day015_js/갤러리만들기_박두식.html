@@ -204,6 +204,28 @@
             }
         }
 
+        function left_click() {
+            index--;
+
+            if (index < 0) {
+                index = book_img_list.length - 1;
+            }
+
+            const book_img = document.querySelectorAll(".book_img");
+            for (let i = 0; i < book_img.length; i++) {
+                books_img = book_img[i];
+                books_img.style.backgroundImage = "url(" + book_img_list[index] + ")";
+                books_img.style.backgroundPosition = "center";
+                books_img.style.backgroundSize = "cover";
+            }
+
+            const book_info = document.querySelectorAll(".book_info");
+            for (let j = 0; j < book_info.length; j++) {
+                books_info = book_info[j];
+                books_info.textContent = book_info_list[index];
+            }
+        }
+
 
 
 
