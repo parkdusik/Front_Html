@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(245,248,248);
+            position: relative;
+            border-top: 3px solid #ccc;
+        }
+
+        .title{
+            position: absolute;
+            left: 10px;
+            top:20px;
+            padding-left: 20px;
+        }
+
+        .search{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+        }
+
+        .search input{
+            width: 200px;
+            height: 30px;
+        }
+
+        .search button{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+
+            border: none;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/검색.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav{
+            height: 40px;
+           padding: 20px;
+           background-color: rgb(232, 243, 243);
+        }
+
+        .nav_ul{
+            display: flex;
+            list-style: none;
+            justify-content: left;
+            text-align: center;
+        }
+
+        .nav_ul li{
+            width: 70px;
+        }
+
+        .nav_ul a{
+            text-decoration-line: none;
+            color: rgb(128,128,128);
+        }
+
+        section{
+            height: 600px;
+            margin-top: 15px;
+        }
+
+        .section_ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+
+        .section_ul li{
+            margin: 2px;
+            padding: 0 auto;
+            width: 300px;
+            padding: 20px;
+            line-height: 50px;
+            text-align: center;
+            align-items: center;
+            border: 0.5px solid rgb(255, 241, 241);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+             color: rgb(128,128,128);
+        }
+
+        .section_ul li img{
+            width: 200px;
+            height: 220px;
+        }
+        
+        .section_ul li div{
+            background-color: black;
+            color: red;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+            width: 130px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer{
+            height: 60px;
+            background-color: rgb(233, 239, 239);
+            padding-left: 30px;
+            padding-right: 50px;
+
+        }
+
+        .footer_ul{
+            list-style: none;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+        }
+
+        .footer_ul li{
+            width: 33.3;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="../images/logo.png" alt="logo.png">
+        </div>
+        
+        <div class="search">
+            <input type="text">
+            <button></button>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav_ul">
+            <li>
+                <a href="../프론트_시험연습_02/login.html">로그인</a>
+            </li>
+            <li>
+                <a href="../프론트_시험연습_02/joinus.html">회원가입</a>
+            </li>
+            <li>
+                <a href="../프론트_시험연습_02/index.html">홈으로</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <ul class="section_ul">
+            <li>
+                <img src="../images/img01.png" alt="img01">
+                프로젝트기반 백데이터분석 과정
+                <div class="item">bigdata</div>
+            </li>
+
+            <li>
+                <img src="../images/img02.png" alt="img01">
+                자바(JAVA)&안드로이드 개발자 양성 과정
+                <div class="item">Android</div>
+            </li>
+
+            <li>
+                <img src="../images/img03.png" alt="img01">
+                Web기반 프론트엔드 자바 개발자 양성 과정
+                <div class="item">Front</div>
+            </li>
+
+        </ul>
+    </section>
+    <footer>
+        <ul class="footer_ul">
+            <li>
+                <img src="../images/footer_acorn.png" alt="footer_acorn.png">
+            </li>
+            <li>(주)에이콘이즈 에이콘아카데미(홍대)</li>
+            <li>COPYRIGHT(C) HBILAB. ALL RIGHTS RESERVED.</li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

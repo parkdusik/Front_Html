@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            height: 100px;
+            background-color: rgb(245,248,248);
+            position: relative;
+            border-top: 3px solid #ccc;
+        }
+
+        .title{
+            position: absolute;
+            left: 10px;
+            top:20px;
+            padding-left: 20px;
+        }
+
+        .search{
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+        }
+
+        .search input{
+            width: 200px;
+            height: 30px;
+        }
+
+        .search button{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+
+            border: none;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/검색.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav{
+            height: 40px;
+           padding: 20px;
+           background-color: rgb(232, 243, 243);
+        }
+
+        .nav_ul{
+            display: flex;
+            list-style: none;
+            justify-content: left;
+            text-align: center;
+        }
+
+        .nav_ul li{
+            width: 70px;
+        }
+
+        .nav_ul a{
+            text-decoration-line: none;
+            color: rgb(128,128,128);
+        }
+
+        section{
+            height: 600px;
+            margin-top: 15px;
+        }
+
+        .section_ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+
+        .section_ul li{
+            margin: 2px;
+            padding: 0 auto;
+            width: 300px;
+            padding: 20px;
+            line-height: 50px;
+            text-align: center;
+            align-items: center;
+            border: 0.5px solid rgb(255, 241, 241);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+             color: rgb(128,128,128);
+        }
+
+        .section_ul li img{
+            width: 200px;
+            height: 220px;
+        }
+        
+        .section_ul li div{
+            background-color: black;
+            color: red;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+            width: 130px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer{
+            height: 60px;
+            background-color: rgb(233, 239, 239);
+            padding-left: 30px;
+            padding-right: 50px;
+
+        }
+
+        .footer_ul{
+            list-style: none;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+        }
+
+        .footer_ul li{
+            width: 33.3;
+            height: 60px;
+        }
+
+        .section_table{
+            width: 800px;
+            border: 1px solid rgb(227, 216, 216);
+            margin: 0 auto;
+            font-size: 12px;
+            border-collapse:collapse;
+            border-spacing: 1;
+        }
+
+        .join_td{
+            border: 1px solid rgb(227, 216, 216);
+            border-right: none;
+            width: 100px;
+            text-align: center;
+        }
+
+         .join_td_2{
+            border: 1px solid rgb(227, 216, 216);
+            border-left: none;
+        }
+
+        .join_tr{
+            height: 40px;
+        }
+
+        .join_tr_7{
+            height: 70px;
+        }
+
+        .section_table tr td div{
+            display: inline;
+        }
+        
+        .password_alret{
+            color: red;
+            display: block;
+        }
+
+        .section_table input, select{
+            width: 150px;
+            height: 30px;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section_table button{
+            width: 150px;
+            height: 40px;
+            border: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="../images/logo.png" alt="logo.png">
+        </div>
+        
+        <div class="search">
+            <input type="text">
+            <button></button>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav_ul">
+             <li>
+                <a href="../프론트_시험연습_02/login.html">로그인</a>
+            </li>
+            <li>
+                <a href="../프론트_시험연습_02/joinus.html">회원가입</a>
+            </li>
+            <li>
+                <a href="../프론트_시험연습_02/index.html">홈으로</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <table class="section_table">
+            <tr class="join_tr">
+                <td class="join_td">
+                    이름
+                 </td>
+                 <td class="join_td_2">
+                    <input type="text">
+                 </td>
+            </tr>
+            <tr class="join_tr">
+                <td class="join_td">
+                    아이디
+                 </td>
+                 <td class="join_td_2">
+                    <input type="text">
+                    <button>중복확인</button>
+                 </td>
+            </tr>
+            <tr class="join_tr_7">
+                <td class="join_td">
+                    비밀번호
+                 </td>
+                 <td class="join_td_2">
+                    <input type="password">
+                    <span class="password_alret">비밀번호는 8자리이상의 영문,숫자를 입력해주세요</span>
+                 </td>
+            </tr>
+             <tr class="join_tr">
+                <td class="join_td">
+                    비밀번호 확인
+                 </td>
+                 <td class="join_td_2">
+                    <input type="password">
+                 </td>
+            </tr>
+             <tr class="join_tr">
+                <td class="join_td">
+                    이메일
+                 </td>
+                 <td class="join_td_2">
+                    <input type="text">@<input type="text">
+                    <select>
+                        <option value="default">선택하세요</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.com">daum.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                    </select>
+                    <button>중복확인</button>
+                 </td>
+            </tr>
+            <tr class="join_tr">
+                <td class="join_td">
+                    학년/반
+                 </td>
+                 <td class="join_td_2">
+                     <select>
+                        <option value="default">선택하세요</option>
+                        <option value="1학년">1학년</option>
+                        <option value="2학년">2학년</option>
+                        <option value="3학년">3학년</option>
+                    </select>
+                    학년
+                     <select>
+                        <option value="default">선택하세요</option>
+                        <option value="1반">1반</option>
+                        <option value="2반">2반</option>
+                        <option value="3반">3반</option>
+                    </select>
+                    반
+                 </td>
+            </tr>
+
+             <tr class="join_tr_7">
+                <td class="join_td" colspan="2">
+                    <button onclick="join_click()">가입</button>
+                    <button>취소</button>
+                 </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <ul class="footer_ul">
+            <li>
+                <img src="../images/footer_acorn.png" alt="footer_acorn.png">
+            </li>
+            <li>(주)에이콘이즈 에이콘아카데미(홍대)</li>
+            <li>COPYRIGHT(C) HBILAB. ALL RIGHTS RESERVED.</li>
+        </ul>
+    </footer>
+    
+    <script>
+
+    </script>
+</body>
+</html>
