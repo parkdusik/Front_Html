@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function () {
+            //id가 item요소 선택해서 마우스 관련 이벤트를 처리하기
+            const item = document.getElementById("item");
+
+            item.addEventListener("mouseover", function () {
+                item.style.backgroundColor = "orange";
+                item.textContent = "마우스 올라감";
+            });
+
+            item.addEventListener("mouseout", function () {
+                item.style.backgroundColor = "blue";
+                item.textContent = "마우스 내려감";
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="item" onmouseover="a(this)" onmouseout="b(this)" id="item"></div>
+</body>
+
+</html>

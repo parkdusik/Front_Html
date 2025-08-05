@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //기능:문서가 로드 되었을 때 갤러리 내용을 가져와서 배열로 만들기
+        //    배열의 첫번째요소가 갤러리에 보이기
+
+        //입력(매개변수):
+        //반환 : 
+
+        //                0       1      2 
+        //let message=[ "하하" , "호호" ,"히히"];
+        let message = [];
+        let index = 0;
+        function aa() {
+            const items = document.querySelectorAll(".gallery > div");
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i];
+                console.log(item, i);
+                message.push(item.textContent);
+            }
+            console.log(message);
+
+
+            //
+            const gallery = document.querySelector(".gallery");
+            gallery.textContent = message[0];
+
+        }
+
+
+        //기능: 갤러리배열의 다음 텍스트가 나오게 하기
+        //입력:
+        //반환:
+
+        function next() {
+            index++;  // index=index+1;   //  0   1   2
+            if (index >= message.length) {  // 3   > = 3
+                index = 0;
+            }
+
+            // (index+1) % message.length;
+            const gallery = document.querySelector(".gallery");
+            gallery.textContent = message[index];
+            console.log(index);
+
+        }
+
+    </script>
+</head>
+
+<body onload="aa()">
+
+
+    <div class="gallery-wrap">
+        <div class="gallery">
+            <div>하하</div>
+            <div>호호</div>
+            <div>히히</div>
+        </div>
+    </div>
+    <button onclick="next()">다음</button>
+
+
+
+</body>
+
+</html>
