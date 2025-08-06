@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Float 레이아웃</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+
+      border: 1px solid black;
+    }
+    .left {
+      float: left;
+      width: 30%;
+      background-color: lightblue;
+      padding: 20px;
+    }
+    .right {
+      float: right;
+      width: 30%;
+      background-color: lightcoral;
+      padding: 20px;
+    }
+
+    /* 부모의 높이 문제 해결,   레이아웃 정리용 */
+    .aa::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container  aa">
+    <div class="left">왼쪽 영역 (30%)</div>
+    <div class="right">오른쪽 영역 (70%)</div>  
+
+    <!-- 해제하기-->
+  </div>
+  <div>영역</div>
+
+</body>
+</html>
